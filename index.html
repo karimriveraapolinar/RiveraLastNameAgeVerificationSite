@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+</head>
+<body>
+    <label for="ageInput">Enter your age:</label>
+    <input type="text" id="ageInput">
+    <button type="submit" id="submitButton">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            const age = document.getElementById('ageInput').value;
+            const result = document.getElementById('result');
+            if (age >= 18) {
+                result.textContent = 'You are an adult.';
+            } else {
+                result.textContent = 'You are a minor.';
+            }
+        });
+    </script>
+</body>
+</html>
