@@ -17,4 +17,4 @@ mySubmit.onclick = function () {
   } else {
     myResult.textContent = `You are ${age}, which means you shouldn't be alive.`;
   }
-};
+}
